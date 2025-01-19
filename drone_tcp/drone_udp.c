@@ -75,6 +75,14 @@ void udp_send_mpu_data(char* data){
     //printf("%d",sizeof(mpu));
 }
 
+void udp_send_bms_data(int data){
+    struct pbuf *p = pbuf_alloc(PBUF_TRANSPORT,sizeof(int),PBUF_RAM);
+    memcpy(p->payload,data,sizeof(int));
+    udp_sendto(self_pcb,p,&remote_ip,remote_port);
+    pbuf_free(p);
+    //printf("%d",sizeof(mpu));
+}
+
 int udp_setup(){
     self_pcb=udp_new();
     //client_pcb=udp_new();
@@ -132,6 +140,8 @@ int main(){
     //Standard Operation begins
     while(1){
         //Processing Here
+        sleep_ms(10000);
+
         if(send_gyro_flag)
             udp_send_mpu_data((char*)&mpu_normalized);//Keep sending mpu data
         }
