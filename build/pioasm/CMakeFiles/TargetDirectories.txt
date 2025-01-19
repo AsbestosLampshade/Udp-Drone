@@ -1,0 +1,7 @@
+/home/alfaugus/raspberry/working/dev/build/pioasm/CMakeFiles/pioasm.dir
+/home/alfaugus/raspberry/working/dev/build/pioasm/CMakeFiles/edit_cache.dir
+/home/alfaugus/raspberry/working/dev/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/alfaugus/raspberry/working/dev/build/pioasm/CMakeFiles/list_install_components.dir
+/home/alfaugus/raspberry/working/dev/build/pioasm/CMakeFiles/install.dir
+/home/alfaugus/raspberry/working/dev/build/pioasm/CMakeFiles/install/local.dir
+/home/alfaugus/raspberry/working/dev/build/pioasm/CMakeFiles/install/strip.dir
